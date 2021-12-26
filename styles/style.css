@@ -301,12 +301,10 @@
 .footer__columns {
   width: 90%;
   display: flex;
-}
-
-.footer__columns {
-  display: flex;
   justify-content: space-between;
 }
+
+
 .footer__column {
   display: flex;
 
@@ -314,10 +312,9 @@
 }
 .footer__column:first-child {
   justify-content: space-between;
-}
-.footer__column:first-child {
   flex-basis: 711px;
 }
+
 .log_place_footer {
   width: 183px;
   height: 35px;

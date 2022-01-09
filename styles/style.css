@@ -24,7 +24,7 @@
   height: 36px;
 }
 
-.log_place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -40,6 +40,7 @@
 }
 
 .header__subtitle {
+  margin: 0px;
   width: 388px;
   position: absolute;
   left: 64px;
@@ -54,7 +55,7 @@
   text-decoration: none;
 }
 
-.main-illustration {
+.header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
@@ -63,7 +64,7 @@
   z-index: 1;
 }
 
-.square-pic {
+.header__square-pic {
   width: 568px;
   height: 568px;
   position: absolute;
@@ -89,11 +90,10 @@
 
 .two-columns__brief {
   width: 175px;
-
+  font-weight: normal;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
-  font-size: medium;
   padding: 0px;
   margin: 0px;
 }
@@ -103,13 +103,13 @@
   min-width: 784px;
 }
 
-.two_columns__paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   margin: 0px 0px 30px 0px;
   color: #1f1f1f;
 }
-.two_columns__paragraph:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0px;
 }
 
@@ -146,6 +146,10 @@
   font-weight: bolder;
   text-align: center;
   padding: 0px;
+  margin: 0px;
+}
+
+.table__text_margin_bottom {
   margin: 0px 0px 20px 0px;
 }
 .section-subtitle {
@@ -182,7 +186,7 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 790px;
+  min-height: 790px;
   background: #f2f2f2 url(../images/feynman.png);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -271,6 +275,7 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
+
 }
 
 .table__text_theme_dark {
@@ -278,14 +283,19 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+
 }
-.kaufman__triagle {
+.kaufman__triangle {
   width: 877px;
   height: 877px;
   position: absolute;
   top: 0px;
   right: -210px;
   z-index: 0;
+  background-image: url(/images/kaufman-triangle.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* подвал (footer) */
@@ -315,7 +325,7 @@
   flex-basis: 711px;
 }
 
-.log_place_footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
 }
@@ -346,7 +356,6 @@
   position: relative;
 }
 .footer__column-link_padding-left::after {
-  background: url(../images/facebook_color_white.svg);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -354,9 +363,13 @@
   left: 0px;
   content: "";
 }
-.footer__column-link_padding-left:nth-child(2)::after {
+
+.footer__column-link_icon-facebook::after {
+  background: url(../images/facebook_color_white.svg);
+}
+.footer__column-link_icon-vk::after {
   background: url(../images/vk_color_white.svg);
 }
-.footer__column-link_padding-left:nth-child(3)::after {
+.footer__column-link_icon-instagram::after {
   background: url(../images/instagram_color_white.svg);
 }

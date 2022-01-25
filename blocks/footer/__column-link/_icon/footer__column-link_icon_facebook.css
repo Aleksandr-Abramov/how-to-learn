@@ -1,0 +1,8 @@
+.footer__column-link_icon_facebook {
+  padding-left: 24px;
+  background-repeat: no-repeat;
+}
+
+.footer__column-link_icon_facebook::after {
+  background: url(../../../../images/facebook_color_white.svg);
+}

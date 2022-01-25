@@ -1,0 +1,8 @@
+.footer__column-link_icon_vk {
+  padding-left: 24px;
+  background-repeat: no-repeat;
+}
+
+.footer__column-link_icon_vk::after {
+  background: url(../../../../images/vk_color_white.svg);
+}

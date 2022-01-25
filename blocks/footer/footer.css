@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 250px;
+  padding: 60px 0px 40px 0px;
+  background: #1f1f1f;
+}

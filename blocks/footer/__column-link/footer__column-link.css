@@ -16,3 +16,6 @@
   left: 0px;
   content: "";
 }
+.footer__column-link:hover {
+  opacity: .5;
+}

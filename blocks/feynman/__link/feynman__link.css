@@ -8,5 +8,8 @@
   color: #2f80ed;
   right: 48px;
   top: 50%;
-  margin-top: -10.5px;
+}
+
+.feynman__link:hover {
+  opacity: .5;
 }

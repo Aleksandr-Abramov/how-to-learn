@@ -1,0 +1,8 @@
+ .footer__column-link_transition,
+ .khan__buy-link_transition,
+ .header__link_transition,
+ .feynman__link_transition  {
+    transition: all 0.5s ease 0s;
+ }
+
+

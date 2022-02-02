@@ -28,7 +28,11 @@
     <main class="content">
       <!-- Блок описани(description) -->
       <section class="description">
-        <article class="two-columns">
+        <div class="two-columns">
+          <!-- Сожалею, но w3c не пропускает article т.к необходим открывающий h2-h6 в области section.
+               Если, подменить div class="two-columns"  article class="two-columns".
+               Заголовок h2, будет считаться от article. Валидацию пройти невозможно.
+               Можно, сверстать иначе. Но, бриф не позволяет изменять разметку. -->
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
@@ -41,7 +45,7 @@
             <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению,
               сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
           </div>
-        </article>
+        </div>
       </section>
 
       <section class="techniques">
@@ -95,7 +99,11 @@
 
       <!-- блок oakley -->
       <section class="oakley">
-        <article class="two-columns">
+        <!-- Сожалею, но w3c не пропускает article т.к необходим открывающий h2-h6 в области section.
+               Если, подменить div class="two-columns"  article class="two-columns".
+               Заголовок h2, будет считаться от article. Валидацию пройти невозможно.
+               Можно, сверстать иначе. Но, бриф не позволяет изменять разметку. -->
+        <div class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя законченным
@@ -104,7 +112,7 @@
               тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши
               добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
           </div>
-        </article>
+        </div>
       </section>
 
 
@@ -231,12 +239,12 @@
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle resources__section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
-          <li classs="resources__logo resources__item">
+          <li class="resources__logo resources__item">
             <a href="https://arzamas.academy" target="_blank">
               <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="картинка resources-arzamas">
             </a>
           </li>
-          <li classs="resources__logo resources__item">
+          <li class="resources__logo resources__item">
             <a  href="https://nplus1.ru" target="_blank">
               <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="картинка n1">
             </a>
@@ -252,8 +260,7 @@
               alt="картинка resources-strelka">
             </a>
           </li>
-
-        </div>
+        </ul>
       </section>
     </main>
 

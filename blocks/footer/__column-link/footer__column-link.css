@@ -6,6 +6,7 @@
   font-size: 18px;
   font-weight: normal;
   position: relative;
+  transition: all 1s ease 0s;
 }
 
 .footer__column-link::after {
